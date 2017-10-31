@@ -1,0 +1,104 @@
+<ion-header color="navbar">
+  <ion-navbar color="navbar">
+    <ion-title>New Application</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <!-- Form designed to record all apps on tablet -->
+    <form (ngSubmit)="logForm()" #applicationForm="ngForm">
+      <!-- Input Field for the first name -->
+      <ion-item>
+        <ion-label color="primary" stacked>First Name</ion-label>
+        <ion-input type="text" [(ngModel)]="application.first_name" name="first_name" required></ion-input>
+      </ion-item>
+      <!-- Input field for the last name -->
+      <ion-item>
+        <ion-label color="primary" stacked>Last Name</ion-label>
+        <ion-input type="text" [(ngModel)]="application.last_name" name="last_name" required></ion-input>
+      </ion-item>
+      <!-- Input field for the Email -->
+      <ion-item>
+        <ion-label color="primary" stacked>Email</ion-label>
+        <ion-input type="email" [(ngModel)]="application.email" name="email" required email></ion-input>
+      </ion-item>
+      <!-- Input field for the Age -->
+      <ion-item>
+        <ion-label color="primary" stacked>Age</ion-label>
+        <ion-input type="number" [(ngModel)]="application.age" name="age" required></ion-input>
+      </ion-item>
+      <!-- Selection field for the grade -->
+      <ion-item>
+        <ion-label color="primary" stacked>Grade</ion-label>
+        <ion-select [(ngModel)]="application.grade" name="grade" required>
+          <ion-option>7th</ion-option>
+          <ion-option>8th</ion-option>
+          <ion-option>9th</ion-option>
+          <ion-option>10th</ion-option>
+          <ion-option>11th</ion-option>
+        </ion-select>
+      </ion-item>
+      <!-- Radio buttons to choose the phone number type -->
+      <ion-item>
+        <ion-label color="primary" stacked>Phone Number Owner</ion-label>
+        <ion-select [(ngModel)]="application.phone_type" name="phone_type" required>
+          <ion-option>Parent's Number</ion-option>
+          <ion-option>Personal Number</ion-option>
+        </ion-select>
+      </ion-item>
+      <!-- Input filed for the phone number -->
+      <ion-item>
+        <ion-label color="primary" stacked>Phone Number</ion-label>
+        <ion-input type="tel" [(ngModel)]="application.phone_number" name="phone_number" required></ion-input>
+      </ion-item>
+      <!-- Slection field for the School -->
+      <ion-item>
+        <ion-label color="primary" stacked>School</ion-label>
+        <ion-input type="text" [(ngModel)]="application.school" name="school" required></ion-input>
+      </ion-item>
+      <!-- Selection field for the ethnicity -->
+      <ion-item>
+        <ion-label color="primary" stacked>Ethnicity</ion-label>
+        <ion-select [(ngModel)]="application.ethnicity" name="ethnicity" required>
+          <ion-option>African American/Black</ion-option>
+          <ion-option>Latino/Hispanic</ion-option>
+          <ion-option>Other</ion-option>
+        </ion-select>
+      </ion-item>
+      <!-- Selection field for the access to computers -->
+      <ion-item>
+        <ion-label color="primary" stacked>Do you have access to computers?</ion-label>
+        <ion-select [(ngModel)]="application.computers" name="computers" required>
+          <ion-option>Yes</ion-option>
+          <ion-option>No</ion-option>
+        </ion-select>
+      </ion-item>
+      <!-- Selection field for the access to wifi -->
+      <ion-item>
+        <ion-label color="primary" stacked>Do you have access to Wifi?</ion-label>
+        <ion-select [(ngModel)]="application.wifi" name="wifi" required>
+          <ion-option>Yes</ion-option>
+          <ion-option>No</ion-option>
+        </ion-select>
+      </ion-item>
+      <!-- Submit Button -->
+      <button ion-button type="submit" [outline]="isOutline" [round]="isRound" style="width: 100%;" class="margin" [disabled]="!applicationForm.valid">
+        Submit
+      </button>
+    </form>
+    <!-- End form -->
+  </div>
+</ion-content>
+
+
+
+
+<!-- <ion-item>
+        <ion-label color="primary" stacked>Teacher Name</ion-label>
+        <ion-input type="text" [(ngModel)]="application.teacher" name="teacher"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" stacked>College Counselor</ion-label>
+        <ion-input type="text" [(ngModel)]="application.counselor" name="counselor"></ion-input>
+      </ion-item> -->

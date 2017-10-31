@@ -1,0 +1,8 @@
+{
+  "name": "SCLAMobile",
+  "app_id": "3dbc6ffd",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

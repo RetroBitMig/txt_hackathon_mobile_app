@@ -1,0 +1,17 @@
+<ion-content padding>
+  <img src="assets/logo.png" alt="" style="width:100%">
+  <br />
+
+  <!-- Bind the color, outline and round inputs to an expression -->
+    <button ion-button [outline]="isOutline" [round]="isRound" style="width: 100%;" [navPush]="formPage">
+      Sign Up
+    </button>
+
+    <button ion-button [outline]="isOutline" [round]="isRound" style="width: 100%;" [navPush]="showApps">
+        Show Apps
+      </button>
+
+      <!-- <button ion-button [outline]="isOutline" [round]="isRound" style="width: 100%;" (click)= "petitionPage()">
+          (Test) Sign Petition
+      </button> -->
+</ion-content>

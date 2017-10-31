@@ -1,0 +1,70 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+ion-title {
+    text-align: center;
+}
+.header, .toolbar {
+    background: #45505d;
+}
+.title {
+    color: #ffffff;
+}
+ion-list {
+    display: inline-flex;
+}
+
+.radio-md .radio-inner {
+    /* left: 2px; */
+    /* top: 2px; */
+    /* border-radius: 50%; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #4b7ab1;
+}
+// .item-md .radio-md {
+//     position: static;
+//     display: block;
+//     margin: 9px 10px 9px 0;
+//     // width: 150px;
+// }
+
+.item-radio-checked.item-md ion-label {
+    color: #ffffff;
+    background: #4b7ab1;
+    width: 150px;
+    height: 45px;
+    padding: 1em 2em;
+    border-radius: 0.25em;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
+
+}
+
+.item-radio.item-md ion-label {
+    color: #000000;
+    margin-left: 0;
+    padding: 1em 2em;
+    background: #efefef;
+    border-radius: 0.25em;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
+    width: 220px;
+}
+
+.hidden {
+    display: none;
+}

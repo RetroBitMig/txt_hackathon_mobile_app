@@ -1,0 +1,29 @@
+<!--
+  Generated template for the ApplicationModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Application Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1>Total applications on device</h1>
+  <h3>{{total}}</h3>
+
+  <h1>Total applications uploaded to server</h1>
+  <h3>{{uploaded}}</h3>
+
+  <h1>Total applications not uploaded to server</h1>
+  <h3>{{notUploaded}}</h3>
+
+  <button ion-button type="submit" [outline]="isOutline" [round]="isRound" style="width: 100%;" class="margin" (click)="goBack()">
+    Close
+  </button>
+</ion-content>
